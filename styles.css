@@ -1,0 +1,99 @@
+/* SilverMuzzle — soft warm neutrals, deep teal #0F766E, warm amber #F59E0B */
+:root{
+  --teal:#0F766E; --teal-dark:#0B5E57; --teal-light:#E6F2F0;
+  --amber:#F59E0B; --amber-dark:#D97706;
+  --bg:#FDF8F2; --surface:#FFFFFF; --ink:#1F2937; --muted:#6B7280;
+  --line:#E8DDD2; --soft:#F5EDE3; --radius:16px;
+  --shadow:0 6px 24px rgba(31,41,55,.07);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:17px}
+a{color:var(--teal);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;height:auto;border-radius:12px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.25;color:#14332F;letter-spacing:-.01em}
+h1{font-size:2.4rem;margin:.4em 0 .3em}
+h2{font-size:1.6rem;margin-top:2.2rem}
+h3{font-size:1.2rem}
+.lead{font-size:1.15rem;color:#374151;max-width:680px}
+/* Header */
+.site-header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+.header-inner{display:flex;align-items:center;gap:18px;padding:14px 20px;max-width:1080px;margin:0 auto}
+.logo{font-size:1.45rem;font-weight:800;color:var(--teal);letter-spacing:-.02em;white-space:nowrap}
+.logo span{color:var(--amber-dark)}
+.logo:hover{text-decoration:none}
+.tagline{font-size:.82rem;color:var(--muted);display:block;line-height:1.2}
+.main-nav{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
+.main-nav a{color:var(--ink);font-size:.95rem;font-weight:600;padding:8px 10px;border-radius:999px}
+.main-nav a:hover{background:var(--teal-light);color:var(--teal);text-decoration:none}
+.nav-toggle{display:none;margin-left:auto;background:var(--teal);color:#fff;border:0;border-radius:10px;padding:9px 14px;font-size:1rem;cursor:pointer}
+/* Hero */
+.hero{background:linear-gradient(180deg,#E6F2F0 0%,#FDF8F2 100%);padding:48px 0 36px}
+.hero h1{font-size:2.7rem}
+.hero .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+.btn{display:inline-block;background:var(--amber);color:#1F2937;font-weight:700;padding:13px 22px;border-radius:999px;border:0;cursor:pointer;font-size:1rem}
+.btn:hover{background:#FBBF24;text-decoration:none}
+.btn-teal{background:var(--teal);color:#fff}
+.btn-teal:hover{background:var(--teal-dark)}
+.btn-ghost{background:#fff;border:1.5px solid var(--teal);color:var(--teal)}
+.btn-ghost:hover{background:var(--teal-light)}
+.eyebrow{font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal)}
+/* Cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin:20px 0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+.card h3{margin-top:0}
+.card h3 a{color:#14332F}
+.card p{color:#4B5563}
+.pill{display:inline-block;background:var(--teal-light);color:var(--teal-dark);font-size:.8rem;font-weight:700;padding:4px 10px;border-radius:999px;margin:2px 4px 2px 0}
+.price{font-weight:700;color:#14332F}
+.meta{font-size:.88rem;color:var(--muted)}
+/* Quiz */
+.quiz{background:#fff;border:1.5px solid var(--line);border-radius:20px;padding:28px;box-shadow:var(--shadow);margin:28px 0}
+.quiz-step{display:none}
+.quiz-step.active{display:block}
+.quiz-options{display:grid;gap:10px;margin:16px 0}
+.quiz-options button{text-align:left;background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:13px 16px;font-size:1rem;cursor:pointer}
+.quiz-options button:hover{border-color:var(--teal);background:var(--teal-light)}
+.quiz-result{display:none;background:var(--teal-light);border-radius:14px;padding:20px;margin-top:16px}
+.quiz-progress{font-size:.88rem;color:var(--muted)}
+/* Filters */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}
+.filter-btn{background:#fff;border:1.5px solid var(--line);border-radius:999px;padding:8px 16px;cursor:pointer;font-weight:600}
+.filter-btn.active,.filter-btn:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+.product[data-hidden="true"]{display:none}
+/* Disclaimer + trust */
+.disclaimer{background:#FFF7E6;border:1px solid #FDE68A;border-left:4px solid var(--amber);border-radius:12px;padding:14px 18px;font-size:.92rem;color:#57534E;margin:22px 0}
+.affiliate-note{background:#F0FDF9;border:1px solid #99F6E4;border-radius:12px;padding:12px 16px;font-size:.9rem;color:#134E4A;margin:18px 0}
+.trust-box{background:var(--soft);border-radius:var(--radius);padding:22px;margin:24px 0}
+.vet-review{border:2px solid var(--teal);border-radius:var(--radius);padding:20px;background:#fff;margin:24px 0}
+/* Tables */
+table{width:100%;border-collapse:collapse;margin:18px 0;background:#fff;border-radius:12px;overflow:hidden}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--teal);color:#fff}
+tr:last-child td{border-bottom:0}
+/* Article */
+.article-body{max-width:760px}
+.article-body ul,.article-body ol{padding-left:22px}
+.article-body li{margin-bottom:8px}
+.breadcrumbs{font-size:.88rem;color:var(--muted);margin:20px 0 0}
+.breadcrumbs a{color:var(--muted)}
+.callout{background:var(--teal-light);border-radius:12px;padding:18px 20px;margin:20px 0}
+.checklist{list-style:none;padding-left:0}
+.checklist li::before{content:"✓ ";color:var(--teal);font-weight:800}
+/* Footer */
+.site-footer{background:#14332F;color:#D1D5DB;margin-top:56px;padding:44px 0 28px}
+.site-footer a{color:#FDE68A}
+.site-footer h4{color:#fff;margin:0 0 10px}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;max-width:1080px;margin:0 auto;padding:0 20px}
+.footer-bottom{max-width:1080px;margin:28px auto 0;padding:18px 20px 0;border-top:1px solid rgba(255,255,255,.18);font-size:.88rem;color:#9CA3AF}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:12px}
+.faq summary{font-weight:700;cursor:pointer;color:#14332F}
+@media (max-width:760px){
+  h1,.hero h1{font-size:1.9rem}
+  .main-nav{display:none;flex-direction:column;width:100%}
+  .main-nav.open{display:flex}
+  .nav-toggle{display:block}
+  .header-inner{flex-wrap:wrap}
+}
